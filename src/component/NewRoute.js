@@ -22,8 +22,9 @@ export default function NewRoute() {
     <BrowserRouter>
         <Routes>
             <Route path='/' element={<Newnav/>}>
+                <Route index element={<Newproduct/>}/>
                 <Route path='/newhome' element={<Newhome/>}/>
-                <Route path='/newproduct' element={<Newproduct/>}/>
+                <Route index path='/newproduct' element={<Newproduct/>}/>
                 <Route path='/newabout' element={<Newabout/>}/>
                 <Route path='/firstcomponent' element={<FirstComponent/>}/>
                 <Route path='/algebric' element={<Algebric/>}/>
@@ -34,7 +35,7 @@ export default function NewRoute() {
                 <Route path='/inlinecss' element={<Inlinecss/>}/>
                 <Route path='/product' element={<Product/>}/>
                 <Route path='/countercomp' element={<CounterComp/>}/>
-                <Route path='/likedislike' element={<Likedislike/>}/>
+                <Route path='/likedislike' element={<Likedislike count={99} count1={6}/>}/>
                 <Route path='/local' element={<LocalStorage/>}/>
                 <Route path='/todo' element={<Viewtodo/>}/>
             </Route>
